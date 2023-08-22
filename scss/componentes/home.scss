@@ -1,0 +1,131 @@
+@import './variables.scss';
+
+.carrito-img {
+    z-index: 100;
+    position: fixed;
+    right: 40px;
+    top: 0;
+    margin-top: 50px;
+    width: 80px;
+    border-radius: 30px;
+    padding: 10px 10px;
+
+}
+
+.contador {
+    top: 60px;
+    right: 20px;
+    font-size: $fontsize;
+    text-align: center;
+    border-radius: 10px;
+    width: 25px;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+
+.carrousel-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $colorb;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .card-body {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+
+    }
+
+    .btn-carrito {
+        opacity: .8;
+        width: 30px;
+    }
+}
+
+.titulos-home {
+    font-weight: bold;
+    font-size: $fontsize*2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: .7;
+    padding: 50px;
+}
+
+.subtitulos-home {
+    font-size: $fontsize;
+    margin-top: 20px;
+    padding-right: 50px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+        color: $colora;
+    }
+
+    a {
+        color: $colora;
+    }
+
+    a:visited {
+        color: $colora;
+    }
+}
+
+.btn-carrito {
+    opacity: .8;
+    width: 30px;
+}
+
+.info-home-container {
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+
+    .info-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 100px 20px;
+
+        .fotos-info-home {
+            opacity: .9;
+            margin: 10px 10px;
+            width: 50px;
+        }
+
+        .extra-info-home {
+            padding: 0px 15px;
+            font-size: 12px;
+            opacity: .8;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+.preguntas-container-padre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .preguntas-container {
+        margin-top: 30px;
+        text-align: center;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items-preguntas {
+        font-size: $fontsize;
+        margin-top: 20px;
+
+    }
+
+    .animated-text {
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: appearFromLeft 1s ease-out forwards;
+
+        @keyframes appearFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+
+
+    table {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        th {
+            color: $colorb;
+            background-color: $colora;
+            padding: 10px 10px;
+
+        }
+
+        td {
+
+            color: $colora;
+            text-align: center;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: rgba(206, 206, 206, 0.795);
+        }
+    }
+}

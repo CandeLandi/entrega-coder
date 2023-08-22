@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.filtro {
+    font-size: $fontsize*2;
+    justify-content: center;
+    display: flex;
+    color: $colora;
+    padding-top:30px ;
+    font-weight: bold;
+    opacity: .8;
+}

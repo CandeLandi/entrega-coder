@@ -1,0 +1,74 @@
+@import './variables.scss';
+header {
+    position: relative;
+
+    .promo {
+        background-color: $colorb;
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+        margin-bottom: 1px;
+    }
+
+    .link-promo {
+        text-decoration: none;
+        color: $colora;
+    }
+
+    .logo {
+        z-index: 10000;
+        width: 140px;
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        height: 150px;
+    }
+
+    .navbar-container {
+        height: 80px;
+        position: relative;
+        background-color: $colora;
+    }
+
+    .navbar-collapse {
+        z-index: 1000;
+    }
+
+    ul li {
+        margin: 0px 10px;
+        display: inline-block;
+    }
+
+    .navbar-nav {
+        color: white;
+    }
+
+    .navbar-position {
+        margin-left: 170px;
+        background-color: $colora;
+        z-index: 10000000;
+        border-radius: 2px;
+
+        &:visited {
+            color: $colorb;
+        }
+    }
+
+    .nav-link {
+        color: $colorb;
+
+        &:hover {
+            color: $colorb;
+            border-radius: 3px;
+        }
+    }
+
+    .activeLink {
+        color: white;
+
+        &:hover {
+            color: $colorb;
+            border-radius: 3px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import './variables.scss';
+footer {
+    background-color: $colorb;
+    border-top: 1px solid rgba(24, 24, 24, .3);
+    box-shadow: 1px 1px 1px rgba(24, 24, 24, .8);
+    margin-top: auto;
+    opacity: .8;
+    padding: 20px;
+    color: $colora;
+    display: flex;
+    flex-direction: column;
+
+    .barra-search {
+        display: flex;
+        justify-content: end;
+    }
+
+    .lupa-footer {
+        width: 20px;
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .email-icon {
+        width: 2rem;
+        margin: 20px;
+        opacity: .8;
+    }
+
+    .enlaces-footer {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    ul li {
+        margin: 0px 10px;
+        display: inline-block;
+
+        a {
+            color: $colora;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+
+        }
+    }
+
+
+}
