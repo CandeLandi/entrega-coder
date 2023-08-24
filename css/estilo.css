@@ -407,65 +407,58 @@ header {
 .error-page {
   background-color: #2b2828;
   height: 100vh; }
-
-.icon-error {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.img-error {
-  max-width: 600px;
-  opacity: .7; }
-
-.container-page-error {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 2; }
-
-.text-page-error {
-  margin-top: 50px;
-  color: #fafafa;
-  font-size: 25px;
-  text-align: center;
-  z-index: 10;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 2s forwards; }
+  .error-page .icon-error {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .error-page .icon-error .img-error {
+      max-width: 600px;
+      opacity: .7; }
+  .error-page .container-page-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2; }
+    .error-page .container-page-error .text-page-error {
+      margin-top: 100px;
+      color: #fafafa;
+      font-size: 25px;
+      text-align: center;
+      z-index: 10;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s forwards; }
 
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0); } }
-
-.img-container-error {
-  z-index: 10;
-  left: 200px;
-  width: 100%;
-  bottom: 0; }
-
-.img-page-error {
-  width: 350px;
-  z-index: 10; }
-
-.btn-error {
-  margin-top: 10px; }
-  .btn-error a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fafafa;
-    color: #2b2828;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem; }
-    .btn-error a:hover {
-      background-color: #eeede9;
-      color: colora; }
+    .error-page .container-page-error .btn-error {
+      margin-top: 10px; }
+      .error-page .container-page-error .btn-error a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #2b2828;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem; }
+        .error-page .container-page-error .btn-error a:hover {
+          background-color: #eeede9;
+          color: colora; }
+  .error-page .img-container-error {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 73%; }
+    .error-page .img-container-error .img-page-error {
+      bottom: 0;
+      width: 450px;
+      z-index: 10; }
 
 * {
   margin: 0;
