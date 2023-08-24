@@ -21,18 +21,13 @@
 
     .animated-text {
         opacity: 0;
-        transform: translateX(-100%);
-        animation: appearFromLeft 1s ease-out forwards;
+        transform: translateY(20px);
+        animation: fadeInUp 2s forwards;
 
-        @keyframes appearFromLeft {
-            0% {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-
-            100% {
+        @keyframes fadeInUp {
+            to {
                 opacity: 1;
-                transform: translateX(0);
+                transform: translateY(0);
             }
         }
     }

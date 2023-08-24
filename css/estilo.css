@@ -370,16 +370,13 @@ header {
     margin-top: 20px; }
   .preguntas-container-padre .animated-text {
     opacity: 0;
-    transform: translateX(-100%);
-    animation: appearFromLeft 1s ease-out forwards; }
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards; }
 
-@keyframes appearFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%); }
-  100% {
+@keyframes fadeInUp {
+  to {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateY(0); } }
   .preguntas-container-padre table {
     margin-bottom: 20px;
     display: flex;
@@ -526,6 +523,11 @@ body {
     font-size: 12px; }
   .navbar-container {
     height: 80px; }
+  .carrousel-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #fafafa; }
   .extra-info-home {
     font-size: 10px; }
   .info-home-container {

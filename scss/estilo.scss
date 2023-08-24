@@ -98,7 +98,12 @@ body {
     .navbar-container {
         height: 80px;
     }
-
+    .carrousel-home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background-color: $colorb;
+    }
     .extra-info-home {
         font-size: 10px;
     }
