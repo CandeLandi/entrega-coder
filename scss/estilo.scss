@@ -11,6 +11,7 @@
 @import './componentes/pageError.scss';
 @import './variables.scss';
 @import './mixins.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -132,6 +133,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         background-color: $colorb;
+    }
+
+    .filtro {
+        font-size: 20px;
     }
 
     .info-home-container {
@@ -284,8 +289,13 @@ body {
         }
 
         table {
-           font-size: 12px;
+            font-size: 12px;
+
+            th {
+                padding: 5px 5px;
+            }
         }
+
 
     }
 }

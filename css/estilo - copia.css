@@ -526,8 +526,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     background-color: #fafafa; }
-  .filtro {
-    font-size: 20px; }
   .info-home-container {
     gap: 10px;
     flex-direction: column; }
@@ -602,6 +600,4 @@ body {
   .preguntas-container .img-mapa {
     width: 300px; }
   .preguntas-container table {
-    font-size: 12px; }
-    .preguntas-container table th {
-      padding: 5px 5px; } }
+    font-size: 12px; } }
