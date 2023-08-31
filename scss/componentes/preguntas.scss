@@ -37,6 +37,10 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        .text-talles {
+            background-color: $colora;
+            font-weight: bold;
+        }
 
         th {
             color: $colorb;

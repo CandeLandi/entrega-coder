@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixins.scss';
 footer {
     background-color: $colorb;
     border-top: 1px solid rgba(24, 24, 24, .3);
@@ -20,9 +21,7 @@ footer {
     }
 
     .redes-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       @include flex-center;
         padding: 30px;
     }
 
@@ -40,16 +39,10 @@ footer {
 
     ul li {
         margin: 0px 10px;
-        display: inline-block;
+       display: inline-block;
 
         a {
-            color: $colora;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline !important;
-            }
-
+            @include link-style;
         }
     }
 

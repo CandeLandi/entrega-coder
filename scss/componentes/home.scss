@@ -1,31 +1,5 @@
-@import './variables.scss';
-
-.carrito-img {
-    z-index: 100;
-    position: fixed;
-    right: 40px;
-    top: 0;
-    margin-top: 50px;
-    width: 80px;
-    border-radius: 30px;
-    padding: 10px 10px;
-
-}
-
-.contador {
-    top: 60px;
-    right: 20px;
-    font-size: $fontsize;
-    text-align: center;
-    border-radius: 10px;
-    width: 25px;
-    height: auto;
-    background-color: white;
-    position: fixed;
-    z-index: 100;
-}
-
-
+@import '../variables.scss';
+@import '../mixins.scss'; 
 .carrousel-home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -65,10 +39,9 @@
 }
 
 .titulos-home {
+    @include flex-center;
     font-weight: bold;
     font-size: $fontsize*2;
-    display: flex;
-    justify-content: center;
     width: 100%;
     opacity: .7;
     padding: 50px;
@@ -78,16 +51,11 @@
     font-size: $fontsize;
     margin-top: 20px;
     padding-right: 50px;
-    text-decoration: underline;
     display: flex;
     justify-content: flex-end;
 
-    &:hover {
-        color: $colora;
-    }
-
     a {
-        color: $colora;
+        @include link-style;
     }
 
     a:visited {
@@ -101,10 +69,8 @@
 }
 
 .info-home-container {
+    @include flex-center;
     opacity: .8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     gap: 100px;
 

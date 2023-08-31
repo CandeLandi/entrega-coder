@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin link-style {
+    color: $colora ;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
