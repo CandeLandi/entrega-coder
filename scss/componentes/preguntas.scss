@@ -32,28 +32,33 @@
         }
     }
 
+    .table-container {
+        display: flex;
+        justify-content: center;
+        table {
+            margin-bottom: 20px;
 
-    table {
-        margin-bottom: 20px;
-        .text-talles {
-            background-color: $colora;
-            font-weight: bold;
-        }
+            .text-talles {
+                background-color: $colora;
+                font-weight: bold;
+            }
 
-        th {
-            color: $colorb;
-            background-color: $colora;
-            padding: 10px 10px;
+            th {
+                color: $colorb;
+                background-color: $colora;
+                padding: 10px 10px;
 
-        }
+            }
 
-        td {
+            td {
 
-            color: $colora;
-            text-align: center;
-            padding: 5px;
-            border-collapse: collapse;
-            background-color: rgba(206, 206, 206, 0.795);
+                color: $colora;
+                text-align: center;
+                padding: 5px;
+                border-collapse: collapse;
+                background-color: rgba(206, 206, 206, 0.795);
+            }
         }
     }
+
 }
