@@ -1,8 +1,17 @@
 @import './variables.scss';
+
 .info-oulet {
     padding: 10px;
     font-weight: bold;
     opacity: .5;
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width:480px) {
+
+    .info-oulet {
+        font-size: 15px;
+        text-align: center;
+    }
 }

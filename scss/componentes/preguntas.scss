@@ -35,6 +35,7 @@
     .table-container {
         display: flex;
         justify-content: center;
+
         table {
             margin-bottom: 20px;
 
@@ -60,5 +61,39 @@
             }
         }
     }
+}
 
+@media only screen and (max-width:480px) {
+
+    .preguntas-container-padre {
+        .preguntas-container {
+            padding: 10px;
+
+
+
+            .items-preguntas {
+                font-size: 15px;
+
+                .img-mapa {
+                    width: 300px;
+                }
+
+                .table-container {
+
+                    table {
+                        width: 90%;
+                        font-size: 10px;
+
+
+                        th {
+                            padding: 5px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .img-item-undraw img {
+        max-width: 200px;
+    }
 }

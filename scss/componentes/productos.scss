@@ -187,3 +187,75 @@
         }
     }
 }
+
+@media only screen and (max-width:480px) {
+
+    .productos-container-page {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+
+            .card-img {
+                .product-img {
+                    width: 100%;
+                }
+
+                .text-img {
+                    text-align: center;
+
+                    p {
+                        font-size: $fontsize*2;
+                    }
+                }
+            }
+        }
+
+
+
+        .right {
+            width: 100%;
+
+            .right-item {
+                width: 100%;
+
+                .img-item-accesorios {
+                    .product-img {
+                        width: 100%;
+                    }
+
+                    .text-img {
+                        text-align: center;
+
+                        p {
+                            font-size: $fontsize*2;
+                        }
+                    }
+                }
+            }
+
+            .item-container {
+                flex-direction: column;
+
+                .items {
+                    width: 100%;
+
+                    .card-img {
+                        .product-img {
+                            width: 100%;
+                        }
+
+                        .text-img {
+                            text-align: center;
+
+                            p {
+                                font-size: $fontsize*2;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

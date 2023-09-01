@@ -72,3 +72,31 @@ header {
         }
     }
 }
+
+@media only screen and (max-width:480px) {
+
+    header {
+        position: relative;
+
+        .promo {
+            .link-promo {
+                font-size: 12px;
+            }
+        }
+
+        .logo {
+            top: 22px;
+            left: 10px;
+            width: 90px;
+        }
+
+        .nav-bar {
+            background-color: $colorb;
+        }
+
+        .navbar-container {
+            height: 80px;
+            background-color: $colorb;
+        }
+    }
+}

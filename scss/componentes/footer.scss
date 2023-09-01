@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './mixins.scss';
+
 footer {
     background-color: $colorb;
     border-top: 1px solid rgba(24, 24, 24, .3);
@@ -21,7 +22,7 @@ footer {
     }
 
     .redes-footer {
-       @include flex-center;
+        @include flex-center;
         padding: 30px;
     }
 
@@ -39,12 +40,25 @@ footer {
 
     ul li {
         margin: 0px 10px;
-       display: inline-block;
+        display: inline-block;
 
         a {
             @include link-style;
         }
     }
+}
 
+@media only screen and (max-width:480px) {
 
+    footer {
+        .barra-search {
+            justify-content: center;
+        }
+
+        .enlaces-footer {
+            align-items: center;
+            flex-direction: column;
+            font-size: 12px;
+        }
+    }
 }
