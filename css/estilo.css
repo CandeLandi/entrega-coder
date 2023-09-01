@@ -358,9 +358,7 @@ header {
     opacity: 1;
     transform: translateY(0); } }
   .preguntas-container-padre table {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center; }
+    margin-bottom: 20px; }
     .preguntas-container-padre table .text-talles {
       background-color: #2b2828;
       font-weight: bold; }
@@ -599,9 +597,12 @@ body {
   .info-mayorista {
     width: 100%;
     justify-content: center; }
-  .preguntas-container .img-mapa {
-    width: 300px; }
-  .preguntas-container table {
-    font-size: 12px; }
-    .preguntas-container table th {
-      padding: 5px 5px; } }
+  .preguntas-container {
+    padding: 10px; }
+    .preguntas-container .img-mapa {
+      width: 300px; }
+    .preguntas-container table {
+      width: 90%;
+      font-size: 12px; }
+      .preguntas-container table th {
+        padding: 5px 5px; } }

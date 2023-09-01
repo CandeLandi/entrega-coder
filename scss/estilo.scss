@@ -8,7 +8,7 @@
 @import './componentes/mayorista.scss';
 @import './componentes/preguntas.scss';
 @import './componentes/todos.scss';
-@import './componentes/pageError.scss';
+@import './componentes/404.scss';
 @import './variables.scss';
 @import './mixins.scss';
 
@@ -284,11 +284,14 @@ body {
     }
 
     .preguntas-container {
+        padding: 10px;
+
         .img-mapa {
             width: 300px;
         }
 
         table {
+            width: 90%;
             font-size: 12px;
 
             th {
