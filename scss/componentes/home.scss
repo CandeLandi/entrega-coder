@@ -30,6 +30,7 @@
         justify-content: center;
         flex-direction: column;
         display: flex;
+        font-size: $fontsize
 
     }
 
@@ -69,33 +70,6 @@
     width: 30px;
 }
 
-.info-home-container {
-    @include flex-center;
-    opacity: .8;
-    padding: 20px;
-    gap: 100px;
-
-    .info-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 100px 20px;
-
-        .fotos-info-home {
-            opacity: .9;
-            margin: 10px 10px;
-            width: 50px;
-        }
-
-        .extra-info-home {
-            padding: 0px 15px;
-            font-size: 12px;
-            opacity: .8;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
 
 @media only screen and (max-width:480px) {
 

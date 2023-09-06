@@ -130,7 +130,8 @@ header {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    display: flex; }
+    display: flex;
+    font-size: 1rem; }
   .card .btn-carrito {
     opacity: .8;
     width: 30px; }
@@ -162,29 +163,6 @@ header {
 .btn-carrito {
   opacity: .8;
   width: 30px; }
-
-.info-home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: .8;
-  padding: 20px;
-  gap: 100px; }
-  .info-home-container .info-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 100px 20px; }
-    .info-home-container .info-item .fotos-info-home {
-      opacity: .9;
-      margin: 10px 10px;
-      width: 50px; }
-    .info-home-container .info-item .extra-info-home {
-      padding: 0px 15px;
-      font-size: 12px;
-      opacity: .8;
-      display: flex;
-      flex-direction: column; }
 
 @media only screen and (max-width: 480px) {
   .carrousel-home {
@@ -592,7 +570,8 @@ body {
   align-items: center;
   opacity: .8;
   padding: 20px;
-  gap: 100px; }
+  gap: 100px;
+  margin-top: 50px; }
   .info-home-container .info-item {
     display: flex;
     flex-direction: row;
